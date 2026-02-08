@@ -24,7 +24,7 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/mkvkanpur/Colab/blob/main/606/606_python.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/mkvkanpur/Colab/blob/main/606\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
@@ -54,7 +54,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "f80370bb",
-        "outputId": "9343bcae-f242-41c2-f6d0-78ffae5b8a80"
+        "outputId": "35c3499e-9351-4fd0-bf12-e6cb391f4f0d"
       },
       "source": [
         "import os\n",
@@ -83,12 +83,12 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "[Main Script] My PID: 158\n",
+            "[Main Script] My PID: 223\n",
             "[Main Script] My Parent PID (PPID): 88\n",
             "\n",
             "Starting a child process...\n",
-            "  [Child Process] My PID: 7576\n",
-            "  [Child Process] My Parent PID (PPID): 158\n",
+            "  [Child Process] My PID: 244\n",
+            "  [Child Process] My Parent PID (PPID): 223\n",
             "\n",
             "Child process finished.\n"
           ]
@@ -102,7 +102,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "366c3352",
-        "outputId": "f530ee90-7030-4c96-91ca-fb8fbae945dc"
+        "outputId": "400addc9-e0a7-4ac3-e34c-3a9fa411bfaa"
       },
       "source": [
         "import multiprocessing\n",
@@ -142,16 +142,16 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Main process (PID: 557): Starting 4 new processes...\n",
+            "Main process (PID: 914): Starting 4 new processes...\n",
             "\n",
-            "Child process (PID, time, CPU): (7110, 1768459623, 1): The square of 5 is 25\n",
+            "Child process (PID, time, CPU): (1532, 1768816306, 0): The square of 5 is 25\n",
             "\n",
-            "Child process (PID, time, CPU): (7119, 1768459625, 1): The square of 7 is 49\n",
+            "Child process (PID, time, CPU): (1541, 1768816307, 1): The square of 7 is 49\n",
             "\n",
-            "Child process (PID, time, CPU): (7128, 1768459626, 1): The square of 10 is 100\n",
+            "Child process (PID, time, CPU): (1550, 1768816308, 1): The square of 10 is 100\n",
             "\n",
-            "Child process (PID, time, CPU): (7137, 1768459627, 1): The square of 12 is 144\n",
-            "Main process (PID: 557): All processes finished.\n"
+            "Child process (PID, time, CPU): (1559, 1768816309, 1): The square of 12 is 144\n",
+            "Main process (PID: 914): All processes finished.\n"
           ]
         }
       ]
@@ -195,7 +195,7 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "C9rt808aPhsF",
-        "outputId": "dfa8e564-3bf5-468d-adcb-3965c0fee63e"
+        "outputId": "50fae934-7dc9-40ed-bfb2-3e7f43661209"
       },
       "execution_count": null,
       "outputs": [
@@ -203,16 +203,18 @@
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Main process (PID: 446):\n",
-            "\n",
-            "Child process (PID, time, CPU): (21092, 1768587502, 1): The square of 5 is 25\n",
-            "\n",
-            "Child process (PID, time, CPU): (21095, 1768587502, 0): The square of 7 is 49\n",
-            "Child process (PID, time, CPU): (21100, 1768587502, 0): The square of 10 is 100\n",
+            "Main process (PID: 914):\n",
+            "Starting 4 processes \n",
             "\n",
             "\n",
-            "Child process (PID, time, CPU): (21102, 1768587502, 0): The square of 22 is 484\n",
-            "Main process (PID: 446): All processes finished.\n"
+            "Child process (PID, time, CPU): (1588, 1768816315, 1): The square of 5 is 25\n",
+            "Child process (PID, time, CPU): (1591, 1768816315, 0): The square of 7 is 49\n",
+            "\n",
+            "\n",
+            "Child process (PID, time, CPU): (1596, 1768816315, 0): The square of 10 is 100\n",
+            "\n",
+            "Child process (PID, time, CPU): (1599, 1768816315, 0): The square of 22 is 484\n",
+            "Main process (PID: 914): All processes finished.\n"
           ]
         }
       ]
